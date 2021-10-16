@@ -108,4 +108,24 @@ internal unsafe sealed class SLWin32Window : ISLWindow
             User32.UnregisterClassW(pClassName, Kernel32.GetModuleHandleW(null));
         }
     }
+
+    public bool EnterFullscreen(ISLMonitor monitor)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ExitFullscreen()
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool GetFullscreenState(out ISLMonitor monitor)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void RequestClose()
+    {
+        throw new NotImplementedException();
+    }
 }

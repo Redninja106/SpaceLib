@@ -15,6 +15,8 @@ public abstract class SLFactory : IDisposable
     public abstract ISLGLContext GetCurrentGLContext();
     public abstract void RemoveCurrentGLContext();
 
+    public abstract ISLMonitor[] GetMonitors();
+
     public virtual void Dispose()
     {
         GC.SuppressFinalize(this);

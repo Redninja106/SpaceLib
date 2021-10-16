@@ -1,6 +1,6 @@
 ﻿namespace SpaceLib;
 
-public interface INativeObject : IDisposable
+public interface ISLNativeObject : IDisposable
 {
     IntPtr NativePointer { get; }
     

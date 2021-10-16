@@ -40,6 +40,11 @@ internal sealed class SLWin32Factory : SLFactory
         return SLWin32GLContext.GetCurrent();
     }
 
+    public override ISLMonitor[] GetMonitors()
+    {
+        throw new NotImplementedException();
+    }
+
     public override void RemoveCurrentGLContext()
     {
         SLWin32GLContext.RemoveCurrent();

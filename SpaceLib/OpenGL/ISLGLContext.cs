@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SpaceLib.OpenGL;
 
-public interface ISLGLContext : INativeObject
+public interface ISLGLContext : ISLNativeObject
 {
     public bool IsCurrent { get; }
     public bool SwapBuffers();
